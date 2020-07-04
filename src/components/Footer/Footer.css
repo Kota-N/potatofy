@@ -1,16 +1,9 @@
-.footer {
-  background-color: rgba(223, 203, 213, 0.3);
-  width: 100vw;
-  height: 10.5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
 .footer-content {
-  background-color: rgba(192, 129, 176, 0.7);
+  position: absolute;
+  top: 1900px;
+  background-color: rgba(83, 72, 73, 0.7);
   width: 100vw;
-  height: 10vh;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -12,6 +12,13 @@ const ImageHolder = ({ imageUrl, detectedFaces }) => {
 
   return (
     <div className="image-holder">
+      <div className="change-face-btn">
+        {potatofied ? (
+          <button onClick={() => setPotatofied(false)}>UNPOTATOFY...</button>
+        ) : (
+          <button onClick={() => setPotatofied(true)}>POTATOFY!</button>
+        )}
+      </div>
       <div className="detect-area">
         <img id="input-image" src={imageUrl} alt="" />
         {detectedFaces ? (
@@ -27,14 +34,6 @@ const ImageHolder = ({ imageUrl, detectedFaces }) => {
           })
         ) : (
           <FailedToDetect />
-        )}
-      </div>
-
-      <div className="change-face-btn">
-        {potatofied ? (
-          <button onClick={() => setPotatofied(false)}>UNPOTATOFY...</button>
-        ) : (
-          <button onClick={() => setPotatofied(true)}>POTATOFY!</button>
         )}
       </div>
     </div>

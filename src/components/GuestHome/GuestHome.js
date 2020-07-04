@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import ImageHolder from '../ImageHolder/ImageHolder';
 import './GuestHome.css';
@@ -27,7 +27,7 @@ const GuestHome = () => {
     <main>
       <Nav />
       <div className="guest-home">
-        <img className="logo" src={logo} alt="Logo" width="400px" />
+        <img id="logo" className="logo" src={logo} alt="Logo" width="400px" />
         <h2>Pick an Image, Detect Faces</h2>
         <p>
           Have you always wanted to potatofy someone's face but don't how?

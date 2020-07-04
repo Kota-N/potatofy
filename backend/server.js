@@ -20,7 +20,7 @@ const imageController = require('./controllers/imageController');
 const userController = require('./controllers/userController');
 
 app.get('/', (req, res) => {
-  res.json('success');
+  res.send('success');
 });
 
 app.post('/image', imageController.handleDetection);

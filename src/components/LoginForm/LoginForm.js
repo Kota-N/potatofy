@@ -48,22 +48,20 @@ const LoginForm = ({ loginClicked, handleExit }) => {
       <div className="x" onClick={handleExit}>
         x
       </div>
-      <form action="" className="form" id="form">
+      <form action="" className="form">
         <div className="inputs">
-          <label htmlFor="email">Email</label>
+          <label>Email</label>
           <input
             type="email"
-            id="email"
             placeholder="Email"
             onChange={e => setEmailInput(e.target.value)}
             value={emailInput}
           />
         </div>
         <div className="inputs">
-          <label htmlFor="password">Password</label>
+          <label>Password</label>
           <input
             type="password"
-            id="password"
             placeholder="Password"
             onChange={e => setPasswordInput(e.target.value)}
             value={passwordInput}
