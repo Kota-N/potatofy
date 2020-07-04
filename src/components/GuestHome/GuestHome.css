@@ -1,0 +1,44 @@
+.guest-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo {
+  margin: -100px;
+}
+
+.guest-home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.guest-home p {
+  text-align: center;
+  margin: 0.3rem 0.3rem 2rem;
+}
+
+.input-field {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.input-field input {
+  font-size: 0.7rem;
+  width: 70%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 5px;
+  padding: 0.7rem 0.4rem;
+  margin: 0 0.5rem 0;
+}
+
+.input-field button {
+  font-size: 1rem;
+  border: none;
+  padding: 0.7rem;
+  background-color: rgb(128, 148, 240);
+  border-radius: 5px;
+}

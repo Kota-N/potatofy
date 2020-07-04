@@ -1,0 +1,33 @@
+.image-holder {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+.change-face-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-face-btn button {
+  border: none;
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0.2rem;
+  border-radius: 3px;
+  background-color: lightcoral;
+  margin-bottom: 20rem;
+}
+
+.detect-area {
+  position: relative;
+  width: 90%;
+  max-width: 620px;
+}
+
+.image-holder img {
+  width: 100%;
+  border-radius: 3px;
+}

@@ -1,0 +1,106 @@
+.x {
+  color: #222831;
+  position: absolute;
+  right: 2rem;
+  font-size: 3rem;
+  font-weight: 100;
+  transition: all 0.2s ease;
+  opacity: 0.2;
+  cursor: pointer;
+}
+.x:hover {
+  opacity: 0.4;
+}
+
+.form-section {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -250px;
+  border-radius: 5px;
+  display: none;
+  overflow: hidden;
+  height: 500px;
+  width: 500px;
+}
+
+.show-form {
+  display: block;
+}
+
+.form {
+  background-color: rgba(255, 255, 255, 0.97);
+  font-weight: 100;
+  padding: 4rem;
+  border-radius: 5px;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
+}
+
+.inputs {
+  color: #222831;
+  position: relative;
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+
+.inputs label {
+  display: block;
+  margin-bottom: 1rem;
+  color: inherit;
+  font-size: inherit;
+}
+.inputs input {
+  color: inherit;
+  display: block;
+  border: none;
+  width: 100%;
+  font-weight: 100;
+  background-color: inherit;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 0.5rem;
+  font-size: inherit;
+}
+.inputs input::placeholder {
+  font-weight: 100;
+  opacity: 0.5;
+}
+.inputs input:focus::placeholder {
+  opacity: 0;
+}
+
+.inputs input:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.inputs input:focus {
+  border-bottom: 2px solid lightcoral;
+}
+
+/* button in the form*/
+
+.form-sign-up {
+  border: none;
+  padding: 0.7rem 2rem;
+  font-size: inherit;
+  background-color: lightcoral;
+  color: white;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 5px;
+}
+
+/* error */
+small {
+  font-size: 0.5rem;
+  color: red;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .form-section {
+    transform: scale(0.8);
+  }
+}

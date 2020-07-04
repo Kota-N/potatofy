@@ -1,0 +1,26 @@
+.nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 3rem;
+}
+.nav ul li {
+  list-style: none;
+  margin: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav ul li:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+  .nav ul {
+    justify-content: center;
+    margin-right: 0;
+  }
+  .nav ul li {
+    cursor: pointer;
+  }
+}

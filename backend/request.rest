@@ -1,0 +1,36 @@
+get http://localhost:5000
+
+###
+post http://localhost:5000/image
+Content-Type: application/json
+
+{"image": "https://www.yardbarker.com/media/8/9/89dc44b6bd71a6d7e6c25fad3f460e6a87a1628d/thumb_16x9/best-movie-series-franchises-binge-right.jpg"}
+
+###
+post http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "name": "email2",
+    "email": "email2@email",
+    "password": "email2"
+}
+
+###
+
+post http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email2@email",
+    "password": "email2"
+}
+
+###
+
+put http://localhost:5000/entries
+Content-Type: application/json
+
+{
+    
+}
