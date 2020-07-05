@@ -21,10 +21,13 @@ const LoginForm = ({ loginClicked, handleExit }) => {
   const handleLogin = async () => {
     const errorMsg = document.querySelector('small');
     try {
-      const userData = await axios.post('http://localhost:5000/login', {
-        email: emailInput,
-        password: passwordInput,
-      });
+      const userData = await axios.post(
+        'https://potatofy.herokuapp.com/login',
+        {
+          email: emailInput,
+          password: passwordInput,
+        }
+      );
       if (userData) {
         setEmailInput('');
         setPasswordInput('');

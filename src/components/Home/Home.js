@@ -16,14 +16,17 @@ const Home = ({ location }) => {
 
   const getDetectionData = async () => {
     setImageUrl(inputValue);
-    const data = await axios.post('http://localhost:5000/image', {
+    const data = await axios.post('https://potatofy.herokuapp.com/image', {
       image: inputValue,
     });
     setDetectedFasces(data.data.outputs[0].data.regions);
     if (data.data) {
-      const entries = await axios.put('http://localhost:5000/entries', {
-        id: location.state.id,
-      });
+      const entries = await axios.put(
+        'https://potatofy.herokuapp.com/entries',
+        {
+          id: location.state.id,
+        }
+      );
       setEntryCount(entries.data);
     }
   };

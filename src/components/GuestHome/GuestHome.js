@@ -13,7 +13,7 @@ const GuestHome = () => {
   const getDetectionData = async () => {
     setImageUrl(inputValue);
     try {
-      const data = await axios.post('http://localhost:5000/image', {
+      const data = await axios.post('https://potatofy.herokuapp.com/image', {
         image: inputValue,
       });
 
