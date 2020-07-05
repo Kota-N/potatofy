@@ -30,7 +30,7 @@ const GuestHome = () => {
         <img id="logo" className="logo" src={logo} alt="Logo" width="400px" />
         <h2>Pick an Image, Detect Faces</h2>
         <p>
-          Have you always wanted to potatofy someone's face but don't how?
+          Have you always wanted to potatofy someone's face but don't know how?
           <br />
           Here is your solution!
         </p>

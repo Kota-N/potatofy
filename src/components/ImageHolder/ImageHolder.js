@@ -5,10 +5,15 @@ import FailedToDetect from '../FailedToDetect/FailedToDetect';
 
 const ImageHolder = ({ imageUrl, detectedFaces }) => {
   const [potatofied, setPotatofied] = useState(false);
+  const [image, setImage] = useState('');
 
   useEffect(() => {
     setPotatofied(false);
   }, [imageUrl]);
+
+  useEffect(() => {
+    setImage(document.getElementById('input-image'));
+  }, [detectedFaces]);
 
   return (
     <div className="image-holder">
@@ -33,7 +38,7 @@ const ImageHolder = ({ imageUrl, detectedFaces }) => {
             );
           })
         ) : (
-          <FailedToDetect />
+          <FailedToDetect image={image} />
         )}
       </div>
     </div>

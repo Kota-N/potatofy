@@ -102,7 +102,7 @@
 .showcase-image2 {
   position: absolute;
   top: -15px;
-  left: -15px;
+  left: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   width: 400px;
   height: 400px;
