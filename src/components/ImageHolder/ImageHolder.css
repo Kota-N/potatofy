@@ -25,8 +25,8 @@
   position: relative;
   width: 90%;
   max-width: 620px;
-  height: 520px;
   overflow: scroll;
+  max-height: 520px;
 }
 
 .image-holder img {
