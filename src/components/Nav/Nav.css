@@ -1,4 +1,6 @@
 .nav ul {
+  position: relative;
+  z-index: 10;
   display: flex;
   justify-content: flex-end;
   align-items: center;

@@ -5,9 +5,12 @@ const cApp = new Clarifai.App({
 
 exports.handleDetection = (req, res) => {
   cApp.models
-    .predict('c0c0ac362b03416da06ab3fa36fb58e3', req.body.image)
+    .predict('d02b4508df58432fbb84e800597b8959', req.body.image)
     .then(data => res.json(data))
-    .catch(err => res.status(400).json('Unable to work with API'));
+    .catch(err => {
+      res.status(400).json('Unable to work with API');
+      console.log(err);
+    });
 };
 
 exports.handleEntries = knex => (req, res) => {
